@@ -62,6 +62,7 @@ public final class ItemGroup {
             output.accept(Items.NETWORK_INTERFACE_CARD.get());
             output.accept(Items.NETWORK_TUNNEL_CARD.get());
             output.accept(Items.FILE_IMPORT_EXPORT_CARD.get());
+            output.accept(Items.WEB_IMPORT_EXPORT_CARD.get());
             output.accept(Items.SOUND_CARD.get());
             output.accept(Items.INVENTORY_OPERATIONS_MODULE.get());
             output.accept(Items.BLOCK_OPERATIONS_MODULE.get());
@@ -73,7 +74,7 @@ public final class ItemGroup {
             output.accept(Items.TRANSISTOR.get());
             output.accept(Items.CIRCUIT_BOARD.get());
             //output.accept(Items.NETWORK_SWITCH.get());
-            //output.accept(Items.VXLAN_HUB.get());
+            output.accept(Items.VXLAN_HUB.get());
             //output.accept(Items.PCI_CARD_CAGE.get());
         })
         .build()

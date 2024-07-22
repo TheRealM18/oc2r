@@ -40,6 +40,7 @@ public final class ProviderRegistry {
         ITEM_DEVICE_PROVIDERS.register("network_interface_card", NetworkInterfaceCardItemDeviceProvider::new);
         ITEM_DEVICE_PROVIDERS.register("network_tunnel_card", NetworkTunnelCardItemDeviceProvider::new);
         ITEM_DEVICE_PROVIDERS.register("file_import_export_card", FileImportExportCardItemDeviceProvider::new);
+        ITEM_DEVICE_PROVIDERS.register("web_import_export_card", WebImportExportCardItemDeviceProvider::new);
         ITEM_DEVICE_PROVIDERS.register("sound_card", SoundCardItemDeviceProvider::new);
         ITEM_DEVICE_PROVIDERS.register("cpu", CPUItemDeviceProvider::new);
 

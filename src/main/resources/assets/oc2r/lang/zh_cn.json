@@ -72,6 +72,8 @@
   "item.oc2r.cpu_tier_4.desc": "Processes computer instructions.",
   "item.oc2r.file_import_export_card": "文件导入/导出卡",
   "item.oc2r.file_import_export_card.desc": "提供一个API来导入/导出文件。",
+  "item.oc2r.web_import_export_card": "Web Import/Export Card",
+  "item.oc2r.web_import_export_card.desc": "Imports and exports files from the web.",
   "item.oc2r.flash_memory": "固件",
   "item.oc2r.flash_memory.desc": "Readonly storage for firmware.",
   "item.oc2r.floppy": "软盘",

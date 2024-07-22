@@ -3,6 +3,7 @@
 package li.cil.oc2r.common.network.message;
 
 import li.cil.oc2r.common.bus.device.rpc.item.FileImportExportCardItemDevice;
+import li.cil.oc2r.common.bus.device.rpc.item.WebImportExportCardItemDevice;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraftforge.network.NetworkEvent;
 
@@ -50,5 +51,6 @@ public final class ImportedFileMessage extends AbstractMessage {
     @Override
     protected void handleMessage(final Supplier<NetworkEvent.Context> context) {
         FileImportExportCardItemDevice.setImportedFile(id, name, data);
+        WebImportExportCardItemDevice.setImportedFile(id, name, data);
     }
 }
