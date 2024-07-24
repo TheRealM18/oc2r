@@ -62,7 +62,7 @@ public final class ItemGroup {
             output.accept(Items.NETWORK_INTERFACE_CARD.get());
             output.accept(Items.NETWORK_TUNNEL_CARD.get());
             output.accept(Items.FILE_IMPORT_EXPORT_CARD.get());
-            output.accept(Items.WEB_IMPORT_EXPORT_CARD.get());
+            output.accept(Items.WEB_CARD.get());
             output.accept(Items.SOUND_CARD.get());
             output.accept(Items.INVENTORY_OPERATIONS_MODULE.get());
             output.accept(Items.BLOCK_OPERATIONS_MODULE.get());

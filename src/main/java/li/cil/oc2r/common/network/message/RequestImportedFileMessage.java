@@ -4,7 +4,7 @@ package li.cil.oc2r.common.network.message;
 
 import li.cil.oc2r.client.gui.FileChooserScreen;
 import li.cil.oc2r.common.bus.device.rpc.item.FileImportExportCardItemDevice;
-import li.cil.oc2r.common.bus.device.rpc.item.WebImportExportCardItemDevice;
+import li.cil.oc2r.common.bus.device.rpc.item.WebCardItemDevice;
 import li.cil.oc2r.common.network.Network;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.FriendlyByteBuf;
@@ -65,7 +65,7 @@ public final class RequestImportedFileMessage extends AbstractMessage {
                         Minecraft.getInstance().gui.getChat().addMessage(FILE_TOO_LARGE_TEXT
                             .withStyle(s -> s.withColor(TextColor.fromRgb(0xFFA0A0))));
                     }
-                    if (data.length > WebImportExportCardItemDevice.MAX_TRANSFERRED_FILE_SIZE) {
+                    if (data.length > WebCardItemDevice.MAX_TRANSFERRED_FILE_SIZE) {
                         Network.sendToServer(new ClientCanceledImportFileMessage(id));
                         Minecraft.getInstance().gui.getChat().addMessage(FILE_TOO_LARGE_TEXT
                             .withStyle(s -> s.withColor(TextColor.fromRgb(0xFFA0A0))));

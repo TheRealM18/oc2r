@@ -7,16 +7,16 @@ import li.cil.oc2r.api.bus.device.provider.ItemDeviceQuery;
 import li.cil.oc2r.api.capabilities.TerminalUserProvider;
 import li.cil.oc2r.common.Config;
 import li.cil.oc2r.common.bus.device.provider.util.AbstractItemDeviceProvider;
-import li.cil.oc2r.common.bus.device.rpc.item.WebImportExportCardItemDevice;
+import li.cil.oc2r.common.bus.device.rpc.item.WebCardItemDevice;
 import li.cil.oc2r.common.capabilities.Capabilities;
 import li.cil.oc2r.common.item.Items;
 import net.minecraftforge.common.util.LazyOptional;
 
 import java.util.Optional;
 
-public final class WebImportExportCardItemDeviceProvider extends AbstractItemDeviceProvider {
-    public WebImportExportCardItemDeviceProvider() {
-        super(Items.WEB_IMPORT_EXPORT_CARD);
+public final class WebCardItemDeviceProvider extends AbstractItemDeviceProvider {
+    public WebCardItemDeviceProvider() {
+        super(Items.WEB_CARD);
     }
 
     ///////////////////////////////////////////////////////////////////
@@ -29,7 +29,7 @@ public final class WebImportExportCardItemDeviceProvider extends AbstractItemDev
     @Override
     protected Optional<ItemDevice> getItemDevice(final ItemDeviceQuery query) {
         return getTerminalUserProvider(query).map(provider ->
-            new WebImportExportCardItemDevice(query.getItemStack(), provider));
+            new WebCardItemDevice(query.getItemStack(), provider));
     }
 
     @Override

@@ -91,7 +91,7 @@ public final class Items {
     public static final RegistryObject<Item> NETWORK_INTERFACE_CARD = register("network_interface_card", NetworkInterfaceCardItem::new);
     public static final RegistryObject<Item> NETWORK_TUNNEL_CARD = register("network_tunnel_card", NetworkTunnelItem::new);
     public static final RegistryObject<Item> FILE_IMPORT_EXPORT_CARD = register("file_import_export_card");
-    public static final RegistryObject<Item> WEB_IMPORT_EXPORT_CARD = register("web_import_export_card");
+    public static final RegistryObject<Item> WEB_CARD = register("web_card");
     public static final RegistryObject<Item> SOUND_CARD = register("sound_card");
 
     public static final RegistryObject<Item> INVENTORY_OPERATIONS_MODULE = register("inventory_operations_module");
